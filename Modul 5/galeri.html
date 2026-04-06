@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Galeri Flexbox</title>
+<style>
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.gallery-item {
+    /* 6 Kolom dengan memperhitungkan jarak */
+    width: calc(100% / 6 - 10px);
+    margin-bottom: 15px;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+</style>
+</head>
+<body>
+<div class="gallery-container">
+    <div class="gallery-item"><img src="Foto 1.jpg" alt="Foto 1"></div>
+    <div class="gallery-item"><img src="foto 2.jpg" alt="Foto 2"></div>
+    <div class="gallery-item"><img src="Foto 3.jpg" alt="Foto 3"></div>
+    <div class="gallery-item"><img src="Foto 4.jpeg" alt="Foto 4"></div>
+    <div class="gallery-item"><img src="Foto 5.jpeg" alt="Foto 5"></div>
+    <div class="gallery-item"><img src="Foto 6.jpg" alt="Foto 6"></div>
+    <div class="gallery-item"><img src="Foto 7.png" alt="Foto 7"></div>
+    <div class="gallery-item"><img src="Foto 8.jpg" alt="Foto 8"></div>
+    <div class="gallery-item"><img src="Foto 9.jpg" alt="Foto 9"></div>
+    <div class="gallery-item"><img src="Foto 10.jpeg" alt="Foto 10"></div>
+    <div class="gallery-item"><img src="Foto  11.jpeg" alt="Foto 11"></div>
+    <div class="gallery-item"><img src="Foto 12.jpeg" alt="Foto 12"></div>
+    <div class="gallery-item"><img src="Foto 13.jpeg" alt="Foto 13"></div>
+    <div class="gallery-item"><img src="Foto 14.jpg" alt="Foto 14"></div>
+    <div class="gallery-item"><img src="Foto 15.png" alt="Foto 15"></div>
+    <div class="gallery-item"><img src="Foto 16.jpg" alt="Foto 16"></div>
+    <div class="gallery-item"><img src="Foto 17.jpg" alt="Foto 17"></div>
+    <div class="gallery-item"><img src="Foto 18.jpg" alt="Foto 18"></div>
+</div>
+</body>
+</html>

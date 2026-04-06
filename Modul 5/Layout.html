@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Layout Menggunakan CSS Grid</title>
+<style>
+.layout-container {
+    display: grid;
+    /* Menggunakan grid-template-areas agar persis seperti gambar layout */
+    grid-template-areas: 
+        "header header header"
+        "menu main right"
+        "menu footer footer";
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 80px 300px 80px;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+.layout-container > div {
+    background-color: #e3f2fd;
+    border: 3px solid #1e88e5;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    /* Membantu menengahkan teks secara vertikal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header { grid-area: header; }
+.menu { grid-area: menu; }
+.main { grid-area: main; }
+.right { grid-area: right; }
+.footer { grid-area: footer; }
+</style>
+</head>
+<body>
+<div class="layout-container">
+    <div class="header">Header</div>
+    <div class="menu">Menu</div>
+    <div class="main">Main</div>
+    <div class="right">Right</div>
+    <div class="footer">Footer</div>
+</div>
+</body>
+</html>

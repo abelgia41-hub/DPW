@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Belajar Flex Box</title>
+<style>
+.wadah_flex {
+    /* Mengatur container menjadi flex (Skenario 1) */
+    display: flex;
+    background-color: lightblue; 
+    /* Pengaturan akhir setelah Skenario 3, 4, 5, dan 6 */
+    flex-flow: row wrap; 
+    justify-content: space-around; 
+}
+.wadah_flex > div {
+    /* Melengkapi style anak div (Skenario 2) */
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+</style>
+</head>
+<body>
+<div class="wadah_flex">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+</div>
+
+<p>Kesimpulan skenario 1 adalah: Penambahan display: flex membuat elemen berjejer secara horizontal, dan penambahan background-color mewarnai latar belakang wadah kontainer.</p>
+<p>Kesimpulan skenario 2 adalah: Penambahan background, margin, padding, dan ukuran font membuat masing-masing elemen div (kotak) di dalam wadah memiliki bentuk, jarak, dan warna yang lebih jelas.</p>
+<p>Kesimpulan skenario 3 adalah: Properti flex-direction berfungsi mengubah arah susunan tata letak item (misal 'row' untuk menyamping atau 'column' untuk menurun).</p>
+<p>Kesimpulan skenario 4 adalah: Properti flex-wrap memungkinkan item untuk membungkus/turun ke baris baru ketika lebar kontainer utama sudah tidak mencukupi.</p>
+<p>Kesimpulan skenario 5 adalah: Properti flex-flow merupakan singkatan (shorthand) untuk menggunakan flex-direction dan flex-wrap secara bersamaan dalam satu baris kode.</p>
+<p>Kesimpulan skenario 6 adalah: Properti justify-content berfungsi mengatur perataan atau penempatan item-item di sepanjang sumbu utama (misal rata tengah, rata kiri-kanan, atau tersebar merata).</p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Balajar grid</title>
+<style>
+.grid-container{
+    display: grid;
+    grid-gap: 50px;
+    background-color: #2196F3;
+    /* Skenario 2 pada No.5 */
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+.item1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    /* Hasil akhir Skenario 2 pada No.6 */
+    grid-column: 1 / 4;
+}
+.item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+    <div class="item1">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+</div>
+<div>
+    Kesimpulan Skenario 1 (Tugas 5): grid-column-start dan end mengatur rentang titik awal dan titik akhir elemen, sehingga elemen tersebut bisa memakan ruang lebih dari 1 kolom.
+    Kesimpulan Skenario 2 (Tugas 5): Mengubah properti grid-template-columns menjadi kombinasi pixel dan auto akan menentukan ukuran kolom yang statis sekaligus fleksibel.
+    Kesimpulan skenario 1 (Tugas 6): Menggunakan properti grid-row: 1/4 membuat div item1 membentang secara vertikal melintasi baris ke-1 hingga garis batas ke-4.
+    Kesimpulan skenario 2 (Tugas 6): Menggunakan properti grid-column: 1/4 membuat div item1 membentang secara horizontal menempati kolom dari garis grid 1 sampai 4.
+</div>
+</body>
+</html>
