@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic Dialog jQuery UI</title>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#kotak-dialog").dialog({
+    autoOpen: false
+  });
+  
+  $("#tombol-buka").click(function(){
+    $("#kotak-dialog").dialog("open");
+  });
+});
+</script>
+</head>
+<body>
+<button id="tombol-buka">Tampilkan Jendela Dialog</button>
+<div id="kotak-dialog" title="Basic Dialog">
+  <p>Ini adalah tampilan basic dialog menggunakan jQuery UI!</p>
+</div>
+</body>
+</html>

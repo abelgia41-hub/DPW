@@ -1,0 +1,26 @@
+Apa itu AJAX?
+AJAX (Asynchronous JavaScript and XML) adalah sebuah teknik pemrograman web yang memungkinkan pertukaran data antara browser dan server secara asinkron. Hal ini berarti bagian tertentu dari halaman web dapat diperbarui dengan data baru dari server tanpa harus memuat ulang (refresh) seluruh halaman secara keseluruhan.
+
+Apa itu jQuery?
+jQuery adalah sebuah pustaka (library) JavaScript yang dikembangkan untuk menyederhanakan penulisan kode. Dengan menggunakan jQuery, manipulasi elemen HTML, penanganan kejadian (event handling), pembuatan animasi, hingga penerapan fungsi AJAX dapat dilakukan dengan baris kode yang jauh lebih sedikit dan efisien dibandingkan menggunakan JavaScript murni.
+
+Cara Menggunakan jQuery
+Untuk menggunakan jQuery, kita harus menghubungkan file library jQuery ke dalam dokumen HTML. Hal ini dilakukan dengan menambahkan tag <script src="..."> yang mengarah ke file jQuery, baik file lokal maupun melalui CDN (Content Delivery Network). Setelah library terhubung, kita dapat mulai menulis perintah jQuery yang ditandai dengan penggunaan simbol $ sebagai pemanggil fungsinya.
+
+Contoh Pemanfaatan jQuery Sederhana:
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#tombolSembunyi").click(function(){
+    $("p").hide();
+});
+</script>
+</head>
+<body>
+<p>Ini adalah paragraf contoh.</p>
+<button id="tombolSembunyi">Sembunyikan Paragraf</button>
+</body>
+</html>

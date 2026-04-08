@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Download Dialog dengan Progressbar</title>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<script>
+$(document).ready(function(){
+  var progressbar = $("#progressbar");
+  
+  $("#dialog-download").dialog({
+    autoOpen: false,
+    modal: true,
+    title: "Mengunduh Berkas...",
+  });
+
+  $("#mulai-download").click(function(){
+    $("#dialog-download").dialog("open");
+    var nilaiProgress = 0;
+    progressbar.progressbar({ value: nilaiProgress });
+    
+    var simulasiDownload = setInterval(function() {
+      nilaiProgress += 10;
+      progressbar.progressbar("value", nilaiProgress);
+      
+      if (nilaiProgress >= 100) {
+        clearInterval(simulasiDownload);
+        setTimeout(function() {
+          $("#dialog-download").dialog("close");
+          alert("Proses download telah selesai!");
+        }, 500);
+      }
+    }, 400); 
+  });
+});
+</script>
+</head>
+<body>
+<button id="mulai-download">Mulai Download File</button>
+<div id="dialog-download">
+  <p>Status Unduhan:</p>
+  <div id="progressbar"></div>
+</div>
+</body>
+</html>

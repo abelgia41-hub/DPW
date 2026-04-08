@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menu jQuery</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+  .isi-menu { display: none; padding-left: 20px; background-color: #f9f9f9; }
+  .judul-menu { cursor: pointer; padding: 10px; background-color: #ddd; margin-top: 2px; }
+</style>
+<script>
+$(document).ready(function(){
+  $(".judul-menu").click(function(){
+    $(this).next(".isi-menu").slideToggle("fast");
+  });
+});
+</script>
+</head>
+<body>
+  <div class="judul-menu">Menu Utama 1</div>
+  <div class="isi-menu">
+    <p>Sub-menu 1A</p>
+    <p>Sub-menu 1B</p>
+  </div>
+  <div class="judul-menu">Menu Utama 2</div>
+  <div class="isi-menu">
+    <p>Sub-menu 2A</p>
+    <p>Sub-menu 2B</p>
+  </div>
+</body>
+</html>
