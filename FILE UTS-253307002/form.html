@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir PPDB - Stanford University</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Penerimaan Mahasiswa Baru</h1>
+        <p>Stanford University - Tahun Ajaran 2026/2027</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="alur.html">Alur Pendaftaran</a>
+        <a href="form.html">Isi Formulir</a>
+    </nav>
+
+    <main>
+        <div class="form-container">
+            <h2>Formulir Biodata Calon Mahasiswa</h2>
+            <p>Mohon melengkapi data berikut dengan benar dan sesuai dengan dokumen kenegaraan asli.</p>
+            
+            <form id="formDaftar">
+                <div class="input-grup">
+                    <label for="nama_lengkap">Nama Lengkap:</label>
+                    <input type="text" id="nama_lengkap" placeholder="Masukkan nama lengkap Anda">
+                </div>
+
+                <div class="input-grup">
+                    <label for="nik">Nomor Induk Kependudukan (NIK 16 Digit):</label>
+                    <input type="number" id="nik" placeholder="Contoh: 3671000000000000">
+                </div>
+
+                <div class="input-grup">
+                    <label for="jalur">Jalur Pendaftaran:</label>
+                    <select id="jalur">
+                        <option value="">-- Pilih Jalur --</option>
+                        <option value="Reguler">Reguler</option>
+                        <option value="Prestasi">Prestasi Akademik</option>
+                        <option value="Internasional">Kelas Internasional</option>
+                    </select>
+                </div>
+
+                <button type="button" class="btn-kirim" onclick="validasiForm()">Kirim Pendaftaran</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Stanford University. Terakreditasi Global.</p>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="asset/javascript/script.js"></script>
+</body>
+</html>
